@@ -20,25 +20,31 @@
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Date</th>
-                    <th>Salary</th>
-                    <th>Status</th>
+                    <th>NIK</th>
+                    <th>Nama Lengkap</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Agama</th>
+                    <th>Status Pernikahan</th>
+                    <th>Duda Janda</th>
+                    <th>Golongan Darah</th>
+                    <th>Pekerjaan</th>
                     <th class="d-flex align-items-center">Action</th>
                 </tr>
             </thead>
             <tbody>
-                {{if .keluarga}}
-                {{range .keluarga}}
+                {{if .penduduk}}
+                {{range .penduduk}}
                 <tr>
                     <td>1</td>
-                    <td>{{.Kepala}}</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
+                    <td>{{.NIK}}</td>
+                    <td>{{.NamaLengkap}}</td>
+                    <td>{{.JenisKelamin}}</td>
+                    <td>{{.Agama}}</td>
+                    <td>{{.StatusPernikahan}}</td>
+                    <td>{{.DudaJanda}}</td>
+                    <td>{{.GolonganDarah}}</td>
+                    <td>{{.Pekerjaan}}</td>
+                    <td></td>
                 </tr>
                 {{end}}
                 {{end}}
